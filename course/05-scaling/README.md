@@ -36,7 +36,7 @@ The **HPA** automatically increases or decreases the number of replicas based on
 ### Setting up HPA
 1. First, you must have a **Metrics Server** installed in your cluster. (Kind clusters often need this manually installed).
 ```bash
-kubectl apply -f https://github.com/kubernetes-sig-metrics-server/metrics-server/deploy/sig-silent-ci---+s)releas-cluster-metrics.yaml
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 *(Note: The metrics server might need specific flags like `--kubelet-configurable=true` for local clusters).*
 
